@@ -37,11 +37,10 @@ drwxrwxr-x 7 cabox cabox 4.0K Jan 16 18:38 challenge_files
 * The `man` ("manual") command tells you more about how any given command works. (*WARNING:* CodeAnywhere does not support the man command. You can click the following link to complete this task: http://linux.die.net/man/)Run `man` to see instructions about how to use `man`. Then use `man` to learn what the `a`, `l`, and `h` options mean when used with the `ls` command. *Write down what those options do?*
 -a, --all:
 do not hide entries starting with .
--l
+-l:
 use a long listing format
--h, --human-readable
-print sizes in human readable format (e.g., 1K 234M
-   2G)
+-h, --human-readable:
+print sizes in human readable format (e.g., 1K 234M2G)
 
 * Commands can also take *arguments*, which are usually the names of files or locations that you want the command to work with. Try running `ls /` to see what files are in the *root* directory of the filesystem. *What files and directories do you see listed?*
 bin   etc       lib    mnt   root  srv  usr                  
@@ -126,7 +125,7 @@ cabox@box-codeanywhere:~/workspace$ uptime
  0.00                                                   
  
 * Run `ps aux` and review the results. (Hint: Use `man` to learn more about the `ps` command and options.) *How do you interpret what you see here?*
-This seems to have logged statistics of all the commands that I've ran, interpreting when they started, how long it took to process, what directory was used etc. 
+This command logged statistics of all the commands that I've ran, interpreting when they started, how long it took to process, what directory was used etc. 
 cabox@box-codeanywhere:~/workspace$ ps aux              
 USER       PID %CPU %MEM    VSZ   RSS TTY      STAT STAR
 T   TIME COMMAND                                        
@@ -162,7 +161,7 @@ cabox      503  0.0  0.2  15520  1148 pts/0    R+   12:5
 2   0:00 ps aux                                         
 
 * Run `top` and review the results. (Hint: You may need to use `ctrl-c` to get out of this app.) *How do you interpret what you see here?*
-This command seems to be giving a summary of all the tasks being completed and details of this work session in real time. It's interesting to see this command tracking the activity and time instantaniously.
+This command logged a summary of all the tasks being completed and details of this work session in real time. It's interesting to see this command tracking the activity and time instantaniously.
 top - 13:13:24 up 57 min,  1 user,  load average: 0.00, 
 Tasks:  15 total,   1 running,  14 sleeping,   0 stopped
 %Cpu(s):  0.0 us,  0.0 sy,  0.0 ni,100.0 id,  0.0 wa,  0
